@@ -1,0 +1,94 @@
+.main-page-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../../assets//images//Background-Bubble.png");
+    background-repeat: no-repeat;
+    background-size: 20rem; 
+}
+
+.main-content-container {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black; 
+    border-radius: 20px;
+    margin: 25px;
+    padding: 50px 50px; 
+    color: white; 
+}
+
+.main-page-header {
+    width: fit-content; 
+}
+
+.main-page-sub-content {
+    width: 700px; 
+    font-weight: 500;
+}
+
+#services-button {
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+    margin: 20px;
+    margin-top: 120px; 
+    padding: 20px 50px; 
+    color: black !important; 
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 18px; 
+    border: none;
+    color: white; 
+    box-shadow: 3px 4px 15px 3px lightgray; 
+}
+
+.lottie-animation {
+    height: 250px;
+    width: 250px;
+}
+
+@media (max-width: 1200px) {
+    .main-content-container {
+        width: 70%; 
+        padding: 40px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content-container {
+        width: fit-content !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-page-container {
+        margin: 7vh;
+        margin-top: 50vh;
+        background-size: cover;
+
+    }
+
+    .main-content-container {
+        color: black;
+        padding: 0px; 
+
+    }
+
+    .main-page-header{
+        font-size: 7px !important;
+
+    }
+    
+    h1 {
+        text-align: center;
+
+    }
+    
+    .main-page-sub-content {
+        font-size: 9px !important;
+        width: 100%;
+    }
+}

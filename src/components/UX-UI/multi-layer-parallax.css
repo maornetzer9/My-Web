@@ -1,0 +1,52 @@
+.parallax-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+  }
+  
+  .parallax-text {
+    font-weight: bold;
+    color: white;
+    font-size: 7rem;
+    z-index: 10;
+    position: relative;
+  }
+  
+  @media (min-width: 768px) {
+    .parallax-text {
+      font-size: 4rem;
+    }
+
+    .parallax-background {
+        background-size: 20px;
+        background-position: top;
+
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .parallax-text {
+        font-size: 5px;
+    }
+  }
+  
+  .parallax-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: url('./image-full.png');
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .parallax-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    background-image: url('./image-bottom.png');
+    background-position: bottom;
+    background-size: cover;
+  }
+  
